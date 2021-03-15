@@ -1,0 +1,16 @@
+.busqueda-container {
+  height: calc(100vh - (var(--alto-footer) + 56px));
+  display: grid;
+  grid-template-rows: [inicio-busqueda] 22% [fin-busqueda inicio-resultados] 78% [fin-resultados];
+  grid-template-areas: "busqueda" "resultados";
+}
+
+.seccion-busqueda {
+  background-color: #8bcdd5;
+  padding: 1rem 20rem;
+}
+
+.seccion-resultados {
+  background-color: var(--color-fondo);
+  padding: 1rem 20rem;
+}
