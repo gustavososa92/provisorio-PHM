@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { Form, FormGroup, Button } from "react-bootstrap"
-import { Footer } from "../footer/footer"
 import "./login.css"
 
 export const Login = () => {

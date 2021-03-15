@@ -1,14 +1,13 @@
 .login-container {
-  height: 100vh;
+  height: calc(100vh - var(--alto-footer));
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #afe8f0;
+  background-color: var(--color-fondo);
 }
 
 .login {
-  /* border: 1px solid black; */
   padding: 1rem 4rem 2rem 4rem;
   border-radius: 1rem;
   background-color: whitesmoke;
