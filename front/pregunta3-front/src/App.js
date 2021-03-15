@@ -5,7 +5,10 @@ import { Routes } from "./routes"
 
 function App() {
   return (
-    <Routes />
+    <div>
+      <Routes />
+      <Footer />
+    </div>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
