@@ -1,8 +1,10 @@
 import { Navbar, Button, Nav } from "react-bootstrap"
+import { withRouter } from "react-router"
 import "./navbar.css"
 
-export const NavPosta = () => {
-  return (
+const NavComponent = (props) => {
+  const path = props.location.pathname
+  return path == "/login" ? null : (
     <Navbar className="navbar" variant="dark">
       <Navbar.Brand href="#home">Pregunta3!</Navbar.Brand>
       <Nav className="ml-auto">
@@ -13,3 +15,5 @@ export const NavPosta = () => {
     </Navbar>
   )
 }
+
+export const NavComponentWithRouter = withRouter(NavComponent)
